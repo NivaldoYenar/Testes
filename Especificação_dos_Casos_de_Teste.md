@@ -182,3 +182,44 @@
 | **Observações Adicionais** | - Verificar se o progresso de outras metas permanece intacto após exclusão. |
 |                           | - Documentar comportamentos inesperados, como erros de integridade de dados. |
 
+| **Identificador**         | CT-09 - Verificação de Saldo Disponível            |
+|---------------------------|----------------------------------------------------|
+| **Descrição**             | Testar se o saldo disponível reflete corretamente todas as transações registradas. |
+| **Entradas**              | - Transações:                                      |
+|                           |     - R$100,00 - Receita                           |
+|                           |     - R$50,00 - Despesa                            |
+| **Resultados Esperados**  | - O saldo disponível é atualizado corretamente para R$50,00. |
+| **Critérios para Aprovação/Rejeição** | - **Aprovação:**                        |
+|                           |     - Cálculo correto e consistente do saldo.      |
+|                           | - **Rejeição:**                                    |
+|                           |     - Saldo incorreto ou divergências nos cálculos apresentados. |
+| **Recursos para o Caso de Teste** | - **Ambiente de Teste:** Banco de dados com transações registradas. |
+|                           | - **Ferramentas:** Selenium para validação visual; Postman para verificar API de cálculo de saldo. |
+| **Restrições de Uso**      | - Todas as transações devem ser registradas antes do cálculo do saldo. |
+| **Dependências**          | - Este caso de teste depende do caso de teste "Registrar Nova Despesa Financeira" e "Registrar Nova Receita". |
+| **Observações Adicionais** | - Testar com diferentes combinações de receitas e despesas para validar a consistência. |
+|                           | - Verificar o impacto em gráficos de saldo e relatórios financeiros. |
+<br/>
+<br/>
+<br/>
+
+---
+| **Identificador**         | CT-10 - Atualização de Dados do Usuário            |
+|---------------------------|----------------------------------------------------|
+| **Descrição**             | Verificar se o sistema permite a atualização dos dados cadastrais do usuário. |
+| **Entradas**              | - Nome: "João Silva"                               |
+|                           | - E-mail: "joao.silva@exemplo.com"                 |
+| **Resultados Esperados**  | - Dados atualizados com sucesso e visíveis corretamente no perfil do usuário. |
+| **Critérios para Aprovação/Rejeição** | - **Aprovação:**                        |
+|                           |     - Alterações refletem corretamente no sistema. |
+|                           | - **Rejeição:**                                    |
+|                           |     - Dados não são atualizados.                   |
+|                           |     - Inconsistências ou erros na visualização dos dados atualizados. |
+| **Recursos para o Caso de Teste** | - **Ambiente de Teste:** Banco de dados com dados cadastrais de usuários. |
+|                           | - **Ferramentas:** Selenium para automação de interface; Postman para validar API de atualização de usuários. |
+| **Restrições de Uso**      | - Apenas usuários autenticados podem alterar seus dados. |
+| **Dependências**          | - Este caso de teste é independente de outros.     |
+| **Observações Adicionais** | - Verificar se o sistema envia confirmação de e-mail ao alterar o endereço de e-mail. |
+|                           | - Testar com diferentes combinações de dados para garantir a robustez do sistema. |
+
+
