@@ -20,10 +20,9 @@
 | **Observações Adicionais** | - Testar a funcionalidade com diferentes categorias, valores e datas para verificar a robustez do sistema. |
 |                           | - Documentar quaisquer erros ou comportamentos inesperados, como sobreposição de dados ou falhas na atualização do gráfico. |
 |                           | - Verificar a compatibilidade com diferentes formatos de data. |
-
-
-
-
+<br/>
+<br/>
+<br/>
 | **Identificador**         | CT-02 - Criar Meta Financeira                      |
 |---------------------------|----------------------------------------------------|
 | **Descrição**             | Verificar se o sistema permite a criação de uma meta financeira. |
