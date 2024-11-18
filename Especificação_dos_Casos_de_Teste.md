@@ -23,6 +23,7 @@
 <br/>
 <br/>
 <br/>
+
 | **Identificador**         | CT-02 - Criar Meta Financeira                      |
 |---------------------------|----------------------------------------------------|
 | **Descrição**             | Verificar se o sistema permite a criação de uma meta financeira. |
