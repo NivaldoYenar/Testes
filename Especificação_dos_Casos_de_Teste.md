@@ -23,6 +23,7 @@
 <br/>
 <br/>
 <br/>
+---
 
 | **Identificador**         | CT-02 - Criar Meta Financeira                      |
 |---------------------------|----------------------------------------------------|
@@ -46,7 +47,10 @@
 | **Observações Adicionais** | - Testar diferentes combinações de valores, metas e datas para garantir a consistência do sistema. |
 |                           | - Documentar quaisquer falhas ou erros relacionados à criação de metas ou cálculos de progresso. |
 |                           | - Verificar se o progresso é atualizado dinamicamente ao registrar despesas relacionadas à meta. |
-
+<br/>
+<br/>
+<br/>
+---
 
 
 | **Identificador**         | CT-03 - Login com Dados Inválidos                  |
@@ -66,7 +70,9 @@
 | **Dependências**          | - Este caso de teste é independente de outros.     |
 | **Observações Adicionais** | - Realizar testes com diferentes combinações de e-mails e senhas inválidas para maior cobertura. |
 |                           | - Documentar quaisquer mensagens de erro fora do padrão esperado. |
-
+<br/>
+<br/>
+<br/>
 ---
 
 | **Identificador**         | CT-04 - Gerar Gráfico de Despesas Mensais          |
@@ -84,7 +90,9 @@
 | **Dependências**          | - Este caso de teste depende do caso de teste "Registrar Nova Despesa Financeira". |
 | **Observações Adicionais** | - Testar com diferentes combinações de valores e categorias para validar a geração correta. |
 |                           | - Verificar a responsividade e a exibição em dispositivos móveis. |
-
+<br/>
+<br/>
+<br/>
 ---
 
 | **Identificador**         | CT-05 - Recuperação de Senha                       |
@@ -105,3 +113,7 @@
 | **Dependências**          | - Este caso de teste é independente de outros.     |
 | **Observações Adicionais** | - Verificar o comportamento do sistema com e-mails inexistentes ou não cadastrados. |
 |                           | - Documentar problemas de latência no envio de e-mails. |
+<br/>
+<br/>
+<br/>
+---
