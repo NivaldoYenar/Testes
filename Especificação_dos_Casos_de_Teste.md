@@ -25,7 +25,6 @@
 <br/>
 
 ---
-
 | **Identificador**         | CT-02 - Criar Meta Financeira                      |
 |---------------------------|----------------------------------------------------|
 | **Descrição**             | Verificar se o sistema permite a criação de uma meta financeira. |
@@ -51,9 +50,8 @@
 <br/>
 <br/>
 <br/>
+
 ---
-
-
 | **Identificador**         | CT-03 - Login com Dados Inválidos                  |
 |---------------------------|----------------------------------------------------|
 | **Descrição**             | Testar o comportamento do sistema ao realizar login com dados incorretos. |
@@ -74,8 +72,8 @@
 <br/>
 <br/>
 <br/>
----
 
+---
 | **Identificador**         | CT-04 - Gerar Gráfico de Despesas Mensais          |
 |---------------------------|----------------------------------------------------|
 | **Descrição**             | Verificar se o gráfico de despesas mensais é gerado corretamente com base nos dados disponíveis. |
@@ -94,8 +92,8 @@
 <br/>
 <br/>
 <br/>
----
 
+---
 | **Identificador**         | CT-05 - Recuperação de Senha                       |
 |---------------------------|----------------------------------------------------|
 | **Descrição**             | Verificar se o sistema permite a recuperação de senha por e-mail. |
@@ -117,4 +115,5 @@
 <br/>
 <br/>
 <br/>
+
 ---
