@@ -4,14 +4,15 @@
 As funcionalidades e características que serão validadas durante o processo de testes. Aqui são listadas as principais funcionalidades que precisam ser verificadas no aplicativo.
 
 ### Funcionalidades do Aplicativo de Controle Financeiro a Serem Testadas
-- Registro e login de usuários.
-- Registro de despesas e receitas com categorias e valores personalizados.
-- Cálculo e exibição do saldo disponível.
-- Criação e gerenciamento de metas financeiras.
-- Geração de gráficos de despesas mensais categorizados.
-- Atualização e exclusão de transações existentes.
-- Controle de acesso às áreas restritas do sistema.
-- Recuperação de senha por e-mail.
-- Atualização de dados cadastrais do usuário.
+- Verificar se o sistema salva corretamente uma despesa com os dados fornecidos.
+- Verificar se o sistema permite a criação de uma meta financeira.
+- Testar o comportamento do sistema ao realizar login com dados incorretos.
+- Verificar se o gráfico de despesas mensais é gerado corretamente com base nos dados disponíveis.
+- Verificar se o sistema permite a recuperação de senha por e-mail.
+- Testar se usuários não logados conseguem acessar áreas restritas do sistema.
+- Verificar se uma transação existente pode ser editada.
+- Verificar se uma meta financeira pode ser excluída corretamente.
+- Testar se o saldo disponível reflete corretamente todas as transações registradas.
+- Verificar se o sistema permite a atualização dos dados cadastrais do usuário.
 
 ---
