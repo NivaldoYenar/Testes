@@ -15,4 +15,7 @@ As funcionalidades e características que serão validadas durante o processo de
 - Testar se o saldo disponível reflete corretamente todas as transações registradas.
 - Verificar se o sistema permite a atualização dos dados cadastrais do usuário.
 
+# A descrição de cada teste se encontra no link a seguir: [Especificação dos Casos de Testes](https://github.com/Arnaldlucas/Testes/blob/main/Especifica%C3%A7%C3%A3o_dos_Casos_de_Teste.md)
+
+
 ---
