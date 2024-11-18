@@ -117,3 +117,67 @@
 <br/>
 
 ---
+| **Identificador**         | CT-06 - Controle de Acesso Não Autorizado          |
+|---------------------------|----------------------------------------------------|
+| **Descrição**             | Testar se usuários não logados conseguem acessar áreas restritas do sistema. |
+| **Entradas**              | - Acesso à URL de controle de despesas sem login.  |
+| **Resultados Esperados**  | - O sistema redireciona o usuário para a página de login. |
+| **Critérios para Aprovação/Rejeição** | - **Aprovação:**                        |
+|                           |     - Redirecionamento correto para a página de login. |
+|                           |     - Nenhum dado de área restrita é exibido.      |
+|                           | - **Rejeição:**                                    |
+|                           |     - Acesso concedido indevidamente à área restrita. |
+|                           |     - Mensagem de erro inadequada ou ausência de redirecionamento. |
+| **Recursos para o Caso de Teste** | - **Ambiente de Teste:** Configuração com URLs protegidas. |
+|                           | - **Ferramentas:** Postman para testar acesso às APIs; Selenium para validação de interface. |
+| **Restrições de Uso**      | - Apenas usuários autenticados devem acessar áreas restritas. |
+| **Dependências**          | - Este caso de teste é independente de outros.     |
+| **Observações Adicionais** | - Testar com diferentes URLs de áreas restritas para garantir cobertura. |
+|                           | - Documentar quaisquer problemas relacionados à segurança. |
+<br/>
+<br/>
+<br/>
+
+---
+| **Identificador**         | CT-07 - Edição de Transação Existente              |
+|---------------------------|----------------------------------------------------|
+| **Descrição**             | Verificar se uma transação existente pode ser editada. |
+| **Entradas**              | - Transação: [Alimentação, R$50,00].               |
+|                           | - Editar para: [Transporte, R$60,00].              |
+| **Resultados Esperados**  | - A transação é atualizada corretamente no sistema. |
+|                           | - Os dados refletem as alterações tanto na lista quanto nos gráficos de despesas. |
+| **Critérios para Aprovação/Rejeição** | - **Aprovação:**                        |
+|                           |     - Alterações salvas e refletidas corretamente no sistema. |
+|                           | - **Rejeição:**                                    |
+|                           |     - Alterações não são salvas.                   |
+|                           |     - Inconsistências nos dados ou gráficos de despesas. |
+| **Recursos para o Caso de Teste** | - **Ambiente de Teste:** Banco de dados com transações cadastradas. |
+|                           | - **Ferramentas:** Selenium para automação de interface; Postman para verificar API de edição de transações. |
+| **Restrições de Uso**      | - Apenas transações existentes podem ser editadas. |
+| **Dependências**          | - Este caso de teste depende do caso de teste "Registrar Nova Despesa Financeira". |
+| **Observações Adicionais** | - Verificar o comportamento com diferentes combinações de categorias, valores e datas. |
+|                           | - Documentar problemas como erros ao salvar ou sobreposição de dados. |
+
+<br/>
+<br/>
+<br/>
+---
+| **Identificador**         | CT-08 - Exclusão de Meta Financeira                |
+|---------------------------|----------------------------------------------------|
+| **Descrição**             | Verificar se uma meta financeira pode ser excluída corretamente. |
+| **Entradas**              | - Meta: "Economizar para viagem".                  |
+| **Resultados Esperados**  | - A meta é removida da lista sem impactar outras funcionalidades ou metas existentes. |
+|                           | - O progresso financeiro é ajustado adequadamente. |
+| **Critérios para Aprovação/Rejeição** | - **Aprovação:**                        |
+|                           |     - Meta excluída sem erros.                     |
+|                           |     - Progresso e gráficos ajustados corretamente. |
+|                           | - **Rejeição:**                                    |
+|                           |     - Meta não é excluída.                         |
+|                           |     - Exclusão impacta cálculos de outras metas ou dados relacionados. |
+| **Recursos para o Caso de Teste** | - **Ambiente de Teste:** Banco de dados com metas financeiras cadastradas. |
+|                           | - **Ferramentas:** Selenium para automação de interface; Postman para validar API de exclusão de metas. |
+| **Restrições de Uso**      | - Apenas metas existentes podem ser excluídas.    |
+| **Dependências**          | - Este caso de teste é independente de outros.     |
+| **Observações Adicionais** | - Verificar se o progresso de outras metas permanece intacto após exclusão. |
+|                           | - Documentar comportamentos inesperados, como erros de integridade de dados. |
+
