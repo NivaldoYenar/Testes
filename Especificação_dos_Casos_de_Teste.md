@@ -20,3 +20,29 @@
 | **Observações Adicionais** | - Testar a funcionalidade com diferentes categorias, valores e datas para verificar a robustez do sistema. |
 |                           | - Documentar quaisquer erros ou comportamentos inesperados, como sobreposição de dados ou falhas na atualização do gráfico. |
 |                           | - Verificar a compatibilidade com diferentes formatos de data. |
+
+
+
+
+| **Identificador**         | CT-02 - Criar Meta Financeira                      |
+|---------------------------|----------------------------------------------------|
+| **Descrição**             | Verificar se o sistema permite a criação de uma meta financeira. |
+| **Entradas**              | - Meta: "Economizar para viagem"                   |
+|                           | - Valor: R$5.000,00                                |
+|                           | - Data Limite: "2024-12-31"                        |
+| **Resultados Esperados**  | - A meta deve ser criada e exibida na lista de metas. |
+|                           | - Os dados devem estar corretos e associados ao progresso financeiro. |
+| **Critérios para Aprovação/Rejeição** | - **Aprovação:**                        |
+|                           |     - A meta é registrada corretamente com os dados fornecidos. |
+|                           |     - A meta aparece nas seções de progresso e os valores são calculados adequadamente. |
+|                           | - **Rejeição:**                                    |
+|                           |     - A meta não é registrada no sistema.          |
+|                           |     - Aparecem erros ou inconsistências nos cálculos de progresso. |
+| **Recursos para o Caso de Teste** | - **Ambiente de Teste:** Banco de dados configurado para armazenar metas financeiras. |
+|                           | - **Ferramentas:** Selenium para automação de testes de interface; Postman para verificar API de criação de metas. |
+| **Restrições de Uso**      | - A meta financeira deve ter um valor positivo maior que zero. |
+|                           | - A data limite não pode ser anterior à data atual. |
+| **Dependências**          | - Este caso de teste depende do caso de teste "Registrar Nova Despesa Financeira", garantindo que o progresso financeiro seja calculado corretamente. |
+| **Observações Adicionais** | - Testar diferentes combinações de valores, metas e datas para garantir a consistência do sistema. |
+|                           | - Documentar quaisquer falhas ou erros relacionados à criação de metas ou cálculos de progresso. |
+|                           | - Verificar se o progresso é atualizado dinamicamente ao registrar despesas relacionadas à meta. |
